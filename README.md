@@ -7,7 +7,7 @@ and redirects `:80` to `:443` otherwise.
 New services listen on `:443`. See `conf.d/foo.example.org.conf` for an example.
 
 If a service should listen on both `:80` and `:443` then it must include
-`listen_ssl.conf` for certificate renewal to work. See
+`letsencrypt_well_known.conf` for certificate renewal to work. See
 `conf.d/ip.example.org.conf`.
 
 Certificates are expected at `/etc/letsencrypt/live/<server_name>/`. You may
